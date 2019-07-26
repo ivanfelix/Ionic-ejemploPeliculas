@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Peliculas } from 'src/app/interfaces/interfaces';
+import { Pelicula } from 'src/app/interfaces/interfaces';
 import { ModalController } from '@ionic/angular';
 import { DetalleComponent } from '../detalle/detalle.component';
 
@@ -9,7 +9,7 @@ import { DetalleComponent } from '../detalle/detalle.component';
 })
 export class SlideshowParesComponent implements OnInit {
   
-  @Input() peliculas : Peliculas[];
+  @Input() peliculas : Pelicula[];
   @Output() cargarMas = new EventEmitter();
 
   slideOpts = {

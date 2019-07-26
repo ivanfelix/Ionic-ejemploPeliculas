@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from '../services/movies.service';
-import { Peliculas } from '../interfaces/interfaces';
+import { Pelicula } from '../interfaces/interfaces';
 
 @Component({
   selector: 'app-tab1',
@@ -8,8 +8,8 @@ import { Peliculas } from '../interfaces/interfaces';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page implements OnInit {
-  peliculasRecientes: Peliculas[] = [];
-  peliculasPopulares: Peliculas[] = [];
+  peliculasRecientes: Pelicula[] = [];
+  peliculasPopulares: Pelicula[] = [];
   constructor(private moviesService: MoviesService) {}
 
   ngOnInit(){
